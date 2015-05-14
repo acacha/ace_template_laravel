@@ -32,7 +32,20 @@ class AceTemplateLaravelServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishPublicAssets();
+        $this->publishViews();
     }
+
+    private function publishViews()
+    {
+        $this->loadViewsFrom( dirname(__FILE__) . '/../resources/views/', 'acetemplate');
+
+        $this->publishes([
+            dirname(__FILE__) . '/../resources/views/auth' => base_path('resources/views/auth'),
+            dirname(__FILE__) . '/../resources/views/errors' => base_path('resources/views/errors'),
+            dirname(__FILE__) . '/../resources/views/partials' => base_path('resources/views/partials'),
+        ]);
+    }
+
 
     private function publishPublicAssets()
     {
