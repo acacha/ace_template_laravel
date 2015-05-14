@@ -33,6 +33,7 @@ class AceTemplateLaravelServiceProvider extends ServiceProvider
     {
         $this->publishPublicAssets();
         $this->publishViews();
+        $this->publishResourceAssets();
     }
 
     private function publishViews()
@@ -50,6 +51,14 @@ class AceTemplateLaravelServiceProvider extends ServiceProvider
         ]);
     }
 
+    private function publishResourceAssets()
+    {
+        $this->publishes([
+            dirname(__FILE__) . '/../resources/assets/less' => base_path('resources/assets/less'),
+            dirname(__FILE__) . '/../gulpfile.js' => base_path('gulpfile.js'),
+
+        ]);
+    }
 
     private function publishPublicAssets()
     {
