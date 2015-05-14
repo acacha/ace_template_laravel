@@ -37,12 +37,10 @@ class AceTemplateLaravelServiceProvider extends ServiceProvider
     private function publishPublicAssets()
     {
         $this->publishes([
-            dirname(__FILE__) . '/../public/avatars' => public_path(''),
-            dirname(__FILE__) . '/../public/fonts' => public_path(''),
-            dirname(__FILE__) . '/../public/css' => public_path(''),
-            dirname(__FILE__) . '/../public/js'  => public_path(''),
-            dirname(__FILE__) . '/../public/favicon.ico'  => public_path(''),
-            dirname(__FILE__) . '/../public/robots.txt'  => public_path(''),
+            dirname(__FILE__) . '/../public/avatars' => public_path('avatars'),
+            dirname(__FILE__) . '/../public/fonts' => public_path('fonts'),
+            dirname(__FILE__) . '/../public/css' => public_path('css'),
+            dirname(__FILE__) . '/../public/js'  => public_path('js'),
         ], 'assets');
     }
 
