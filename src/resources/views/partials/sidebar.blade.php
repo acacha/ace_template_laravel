@@ -37,9 +37,18 @@
         </div>
     </div><!-- /.sidebar-shortcuts -->
 
+    <li class="">
+        <a href="home">
+            <i class="menu-icon fa fa-picture-o"></i>
+            <span class="menu-text"> TODO MENU 2 </span>
+        </a>
+
+        <b class="arrow"></b>
+    </li>
+
     <ul class="nav nav-list">
         <li class="">
-            <a href="home">
+            <a href="dashboard">
                 <i class="menu-icon fa fa-tachometer"></i>
                 <span class="menu-text"> Dashboard </span>
             </a>
@@ -62,7 +71,7 @@
             <ul class="submenu">
 
                 <li class="">
-                    <a href="typography.html">
+                    <a href="#">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Users
                     </a>
@@ -71,7 +80,7 @@
                 </li>
 
                 <li class="">
-                    <a href="elements.html">
+                    <a href="#">
                         <i class="menu-icon fa fa-caret-right"></i>
                         TODO Other managment menu 1
                     </a>
@@ -80,7 +89,7 @@
                 </li>
 
                 <li class="">
-                    <a href="buttons.html">
+                    <a href="#">
                         <i class="menu-icon fa fa-caret-right"></i>
                         TODO Other managment menu 2
                     </a>
@@ -157,7 +166,7 @@
 
             <ul class="submenu">
                 <li class="">
-                    <a href="tables.html">
+                    <a href="#">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Submenu TODO 1
                     </a>
@@ -166,7 +175,7 @@
                 </li>
 
                 <li class="">
-                    <a href="jqgrid.html">
+                    <a href="#">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Submenu TODO 1
                     </a>
@@ -176,14 +185,7 @@
             </ul>
         </li>
 
-        <li class="">
-            <a href="gallery.html">
-                <i class="menu-icon fa fa-picture-o"></i>
-                <span class="menu-text"> TODO MENU 2 </span>
-            </a>
 
-            <b class="arrow"></b>
-        </li>
 
     </ul><!-- /.nav-list -->
 
